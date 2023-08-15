@@ -28,9 +28,19 @@ class Client
         $this->config = $this->normalizeConfig($config);
     }
 
-    public function get(string $uri, array $options = [], bool $async = false)
+    /**
+     * GET request.
+     *
+     * @param string $url
+     * @param array  $query
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     *
+     * @return \Psr\Http\Message\ResponseInterface|\Overtrue\Http\Support\Collection|array|object|string
+     */
+    public function get(string $url, array $query = [], $async = false)
     {
-        return $this->request($uri, 'GET', $options, $async);
+        return $this->request($url, 'GET', ['query' => $query], $async);
     }
 
     public function getAsync(string $uri, array $options = [])
@@ -187,5 +197,21 @@ class Client
         }
 
         return $config;
+    }
+    
+    /**
+     * JSON request.
+     *
+     * @param string       $url
+     * @param string|array $data
+     * @param array        $query
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     *
+     * @return \Psr\Http\Message\ResponseInterface|\Overtrue\Http\Support\Collection|array|object|string
+     */
+    public function postJson(string $url, array $data = [], array $query = [])
+    {
+        return $this->request($url, 'POST', ['query' => $query, 'json' => $data]);
     }
 }
