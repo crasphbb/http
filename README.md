@@ -19,7 +19,7 @@
 ## Installing
 
 ```shell
-$ composer require overtrue/http -vvv
+$ composer require crasp/http -vvv
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ $ composer require overtrue/http -vvv
 ```php
 <?php
 
-use Overtrue\Http\Client;
+use Crasp\Http\Client;
 
 $client = Client::create(); 
 
@@ -41,7 +41,7 @@ $response = $client->get('https://httpbin.org/ip');
 
 ```php
 
-use Overtrue\Http\Client;
+use Crasp\Http\Client;
 
 $config = [
     'base_uri' => 'https://www.easyhttp.com/apiV2/',
@@ -81,7 +81,7 @@ $ composer require monolog/monolog
 Add logger middleware:
 
 ```php
-use Overtrue\Http\Client;
+use Crasp\Http\Client;
 
 $client = Client::create();
 

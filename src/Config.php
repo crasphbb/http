@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Http;
+namespace Crasp\Http;
 
 class Config
 {

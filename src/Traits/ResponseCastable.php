@@ -1,10 +1,10 @@
 <?php
 
-namespace Overtrue\Http\Traits;
+namespace Crasp\Http\Traits;
 
-use Overtrue\Http\Exceptions\InvalidArgumentException;
-use Overtrue\Http\Responses\Response;
-use Overtrue\Http\Support\Collection;
+use Crasp\Http\Exceptions\InvalidArgumentException;
+use Crasp\Http\Responses\Response;
+use Crasp\Http\Support\Collection;
 use Psr\Http\Message\ResponseInterface;
 
 trait ResponseCastable
@@ -29,7 +29,7 @@ trait ResponseCastable
     }
 
     /**
-     * @throws \Overtrue\Http\Exceptions\InvalidArgumentException
+     * @throws \Crasp\Http\Exceptions\InvalidArgumentException
      */
     protected function detectAndCastResponseToType($response, $type = null)
     {

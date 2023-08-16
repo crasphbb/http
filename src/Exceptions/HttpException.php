@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Http\Exceptions;
+namespace Crasp\Http\Exceptions;
 
 use Psr\Http\Message\ResponseInterface;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Overtrue\Http\Responses;
+namespace Crasp\Http\Responses;
 
-use Overtrue\Http\Exceptions\InvalidArgumentException;
+use Crasp\Http\Exceptions\InvalidArgumentException;
 
 class StreamResponse extends Response
 {
     /**
-     * @throws \Overtrue\Http\Exceptions\InvalidArgumentException
+     * @throws \Crasp\Http\Exceptions\InvalidArgumentException
      */
     public function save(string $directory, string $filename = ''): string
     {
@@ -43,7 +43,7 @@ class StreamResponse extends Response
     }
 
     /**
-     * @throws \Overtrue\Http\Exceptions\InvalidArgumentException
+     * @throws \Crasp\Http\Exceptions\InvalidArgumentException
      */
     public function saveAs(string $directory, string $filename): string
     {

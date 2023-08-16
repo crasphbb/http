@@ -1,11 +1,11 @@
 <?php
 
-namespace Overtrue\Http;
+namespace Crasp\Http;
 
 use GuzzleHttp\ClientInterface;
-use Overtrue\Http\Traits\CreatesDefaultHttpClient;
-use Overtrue\Http\Traits\HasHttpRequests;
-use Overtrue\Http\Traits\ResponseCastable;
+use Crasp\Http\Traits\CreatesDefaultHttpClient;
+use Crasp\Http\Traits\HasHttpRequests;
+use Crasp\Http\Traits\ResponseCastable;
 
 class Client
 {
@@ -36,7 +36,7 @@ class Client
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Overtrue\Http\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Crasp\Http\Support\Collection|array|object|string
      */
     public function get(string $url, array $query = [], $async = false)
     {
@@ -193,12 +193,12 @@ class Client
         }
 
         if (!($config instanceof Config)) {
-            throw new \InvalidArgumentException('config must be array or instance of Overtrue\Http\Config.');
+            throw new \InvalidArgumentException('config must be array or instance of Crasp\Http\Config.');
         }
 
         return $config;
     }
-    
+
     /**
      * JSON request.
      *
@@ -208,7 +208,7 @@ class Client
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Overtrue\Http\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Crasp\Http\Support\Collection|array|object|string
      */
     public function postJson(string $url, array $data = [], array $query = [])
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Http\Traits;
+namespace Crasp\Http\Traits;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;

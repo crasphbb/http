@@ -1,5 +1,5 @@
 {
-    "name": "overtrue/http",
+    "name": "crasp/http",
     "description": "A simple http client wrapper.",
     "type": "library",
     "require": {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Overtrue\\Http\\": "src"
+            "Carsp\\Http\\": "src"
         }
     },
     "license": "MIT",

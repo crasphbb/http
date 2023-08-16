@@ -1,10 +1,10 @@
 <?php
 
-namespace Overtrue\Http\Responses;
+namespace Crasp\Http\Responses;
 
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
-use Overtrue\Http\Support\Collection;
-use Overtrue\Http\Support\XML;
+use Crasp\Http\Support\Collection;
+use Crasp\Http\Support\XML;
 use Psr\Http\Message\ResponseInterface;
 
 class Response extends GuzzleResponse
