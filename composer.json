@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Carsp\\Http\\": "src"
+            "Crasp\\Http\\": "src"
         }
     },
     "license": "MIT",
